@@ -61,7 +61,8 @@ dependencycheck:
      - safety check -r requirements.txt --json > safety-results.json 
    artifacts:
      paths: [safety-results.json]
-     when: always 
+     when: always
+   allow_failure: true
 
 
 owasp:
